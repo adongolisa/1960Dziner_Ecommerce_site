@@ -1,0 +1,645 @@
+ *{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top,#c72092,#6c14d0);
+}
+
+
+section{
+    
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: center;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: white;
+    
+}
+
+section nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c72092;
+    margin: 5px 0;
+    cursor: pointer;
+    left: -4%;
+
+}
+
+section nav .logo span {
+    color:#6c14d0;
+    text-decoration: underline;
+}
+
+section nav ul {
+    list-style: none;
+    
+    
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+
+}
+
+section nav ul li a {
+    color: black;
+    text-decoration: none;
+    
+    transition: 0.3s;
+}
+
+section nav ul li a:hover {
+    color: #c72092;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    
+}
+section nav .icons i:hover{
+    color: #c72092 ;
+}
+
+.main .main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main .main-content .main-text h1{
+
+    font-size: 90px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right,#c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: -60px;
+    left: 5%;
+}
+
+.main .main-content .main-text h1 span {
+    font: size 70px;
+    background: linear-gradient(to right, #c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ .main .main-content .main-text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 25px;
+    left: 5%;
+}
+ .main .main-content .main-image img{
+    width: 350px;
+    position: relative;
+    left: 20px;
+    top: 75px;
+}
+
+.main .social-media{
+    position: absolute;
+    top:50%;
+    left: 98%;
+    transform: translate(-50% , -50%);
+    font-size: 19px;
+}
+
+.main .social-media i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main .social-media i:hover{
+    color: #c72092;
+
+}
+.main .button{
+    position: absolute;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #c72092,#6c14d0);
+    top: 500px;
+}
+
+
+
+ .about{
+    width: 100%;
+    height: 100vh;
+    
+    padding: 35px 0;
+
+}
+.about h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about h1 span {
+    background: linear-gradient(to right, #c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+.about .about-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: relative;
+}
+.about .button-2{
+    position: absolute;
+    color: black;
+    border: 3px solid #c72092;
+    text-decoration: none;
+    padding: 10px 25px;
+    background:none;
+    
+    left: 50%;
+    transform: translate(-50% , -50%);
+    box-shadow: 0 0 8px #c72092;
+    transition: 0.5s;
+
+}
+.about .button-2:hover{
+    border: 2px solid transparent;
+    background: #c72092;
+    color: white;
+
+}
+.about .about-main  .about-image{
+    display: flex;
+    margin-top: 30px;
+    
+}
+.about  .about-main .about-image .about-small-image img{
+    height: 85px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #6c14d0,#c72092);
+    display: block;
+    border-radius: 6px;
+    padding: 3px 3px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+
+    
+}
+.about  .about-main .about-image .about-small-image img:hover{
+    opacity: 1;
+}
+.about  .about-main .about-image .about-small-image{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+.about .about-main .image-container {
+    padding: 10px;
+    display: flex;
+}
+.about .about-main .image-container img {
+    border: 3px solid #6c14d0;
+    border-radius: 20px;
+    height: 280px;
+    padding: 30px;
+    box-shadow: 0 0 8px #6c14d0;
+    margin-left: 80px;
+
+}
+.about .about-main .about-text{
+    margin-top: 45px;
+
+}
+.about .about-main .about-text p{
+    background: linear-gradient(to left, #c72092,#6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 22px;
+    width: 240px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 3px solid #c72092;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #c72092;
+
+
+
+}
+.products{
+    width: 100%;
+    height: 200vh;
+    background-color: aliceblue;
+    padding: 35px 0;
+
+}
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap :25px 0;
+}
+
+.products .box .card{
+    background: whitesmoke;
+    
+    height: 440px;
+    width: 290px;
+    text-align: center;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 8px #6c14d0; 
+}
+.products .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products .box .card .image img {
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+.products .box .card:hover .image img{
+
+    transform: scale(1.1);
+
+}
+.products .box .card .small-card {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px)
+    ;
+    transition: 0.3s;
+    opacity: 0;
+}
+.products .box .card:hover .small-card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.products .box .card .small-card i{
+    width: 45px ;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+
+}
+.products .box .card .small-card i:hover{
+    color: #c72092;
+}
+.products .box .card  .products-text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.products .box .card  .products-text p{
+    font-size: 15px;
+    line-height: 10px;
+    color: #999999;
+    transition: 0.3s;
+}
+
+.services{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    margin-top: 480px ;
+    text-align: center;
+    padding: 25px 0 ;
+    
+    
+
+    
+}
+
+.services h1{
+    padding: 50px 0;
+    font-size: 60px;
+    background: linear-gradient(to left, #c72092,#6c14d0);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+   
+}
+.services .service-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:50px ;
+
+}
+.services .service-container .service-list i{
+    color: orange;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 60px;
+    
+    
+
+}
+
+.services .service-container .service-list h3{
+    font-size: 20px;
+    margin-bottom: 12px;
+
+}
+.services .service-container .service-list p{
+    margin-bottom: 60px;
+    text-align: center;
+    color: #999999;
+}
+
+.login-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+
+    
+    
+    
+}
+.login-form .left{
+    position: relative;
+}
+.login-form .left img{
+   
+    width: 450px;
+}
+.login-form .right{
+    left: -60px;
+    position: relative;
+    top: -50px;
+
+    padding: 50px 80px;
+    
+}
+.login-form .right .h1{
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.login-form .right p{
+    margin-bottom: 5px;
+
+}
+.login-form .right .user{
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+.login-form .right .user i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+.login-form .right .user .username{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+.login-form .right .password-tag{
+    margin: 15px 0 5px 0;
+    
+}
+.login-form .right .password{
+    border: 2px solid #6c14d0;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+.login-form .right .password i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+.login-form .right .password  input{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 0.7;
+}
+.login-form .right .forget{
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+.login-form .right button{
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #c72092 ,#6c14d0);
+
+}
+.login-form .right .login-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.login-form .right .login-icon a{
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.6);
+}
+.login-form .right .login-icon img{
+    width: 20px;
+    margin: 5px 5px;
+}
+footer{
+    width: 100%;
+}
+footer .footer-main{
+    width: 100%;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-main .tag{
+    margin: 10px 0;
+}
+footer .footer-main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+footer .footer-main .tag .center{
+    text-align: center;
+}
+footer .footer-main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+}
+footer .footer-main .tag a i:hover{
+    color: #c72092;
+}
+footer .footer-main .tag .social-link{
+    display: flex;
+}
+footer .footer-main .tag .social-link a{
+    height: 30px;
+    width: 30px;
+    
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+    overflow: hidden;
+
+}
+footer .footer-main .tag .social-link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+footer .footer-main .tag .social-link a:hover i{
+     color: white;
+}
+footer .footer-main .tag .social-link a ::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092, #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+}
+footer .footer-main .tag .social-link a:hover ::after{
+    left: 0;
+}
+footer .footer-main .tag .search-bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202,202, 202);
+    border-radius: 25px;
+}
+footer .footer-main .tag .search-bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+}
+footer .footer-main .tag .search-bar button{
+    padding: 7px 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+}
